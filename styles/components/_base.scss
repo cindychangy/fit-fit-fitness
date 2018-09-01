@@ -13,6 +13,8 @@
 body {
   font-family: 'Open Sans';
   color: #1c1f21;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -22,9 +24,13 @@ a {
 
 //helpers
 .visible {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.rotate {
+  transform: rotate(45deg);
 }
