@@ -1,0 +1,4 @@
+*.json
+*.lock.json
+*.babelrc
+/node_modules
