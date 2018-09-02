@@ -1,15 +1,23 @@
 
 h1 {
-  font-size: 8em;
+  font-size: 4.4em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   margin-bottom: 30px;
+
+  @include breakpoint(large) {
+  font-size: 8em;
+  }
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.5em;
   font-weight: 200;
   color: #949ca2;
   margin-top: 1em;
+
+  @include breakpoint(medium) {
+  font-size: 1.3em;
+  }
 }

@@ -1,7 +1,20 @@
 .intro-wrapper {
-  padding: 13em 6em;
+  padding: 6em 3em;
+  width: 100%;
 
   &__content {
-  width: 45%;
+  width: 100%;
+
+  @include breakpoint(medium) {
+  width: 70%;
+  }
+
+  @include breakpoint(large) {
+    width: 45%;
+  }
+}
+
+  @include breakpoint(large) {
+  padding: 11em 8em;
   }
 }

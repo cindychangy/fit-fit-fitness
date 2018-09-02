@@ -1,8 +1,17 @@
 
 const videos = [
-	'https://www.youtube.com/embed/18hPypKsQ8w',
-	'https://www.youtube.com/embed/VUipWn2gf1M',
-	'https://www.youtube.com/embed/STN3KpGIxcY'
+	'18hPypKsQ8w',
+	'VUipWn2gf1M',
+	'STN3KpGIxcY',
+	'6cm2jHct_fU',
+	'EtHzY-yD5gY',
+	'mNoh78nufPo',
+	'76VpyX5AHEI',
+	'qoaPEkTdg6w',
+	'RdyMsECmhGQ',
+	'YaQ7JByPnw8',
+	'Zl4LyE6k6FI',
+	'yxAwtm8__E8'
 ];
 
 const showInputBtn = document.getElementById('showInput');
@@ -18,7 +27,7 @@ const getVideo = () => {
 
   //show video
   modal.classList.toggle('show-modal');
-  videoContainer.innerHTML = `<iframe id="videoFrame" width="853" height="480" src="${picked}" frameborder="0" allowfullscreen"></iframe>`;
+  videoContainer.innerHTML = `<iframe id="videoFrame" width="853" height="480" src="https://www.youtube.com/embed/${picked}" frameborder="0" allowfullscreen"></iframe>`;
 }
 
 //close video
@@ -35,8 +44,6 @@ pickBtn.addEventListener('click', getVideo);
 showInputBtn.addEventListener('click', () => {
   const inputElements = document.getElementsByClassName('nav__input')[0];
   inputElements.classList.toggle('visible');
-
-  // this.classList.toggle('rotate');
 });
 
 //add video functionality
@@ -47,9 +54,3 @@ const addNewVideo = () => {
 }
 
 submitBtn.addEventListener('click', addNewVideo);
-
-
-////////need to do
-//set up db
-//change plus to x to remove videos from db
-

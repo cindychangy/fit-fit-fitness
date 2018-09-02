@@ -1,26 +1,51 @@
 .nav {
   height: 60px;
-  background: #f2f4f5;
+  background: #e2e6e8;
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
 
-    &__input {
+  &__input {
     display: none;
+    width: 100%;
+    text-align: right;
   }
 }
 
  input {
   height: 100%;
-  width: 400px;
+  width: 100%;
+  display: inline-block;
+  max-width: 188px;
   background: #ec34be;
   outline: 0;
   padding: 1em;
   color: #fff;
   margin-right: -4px;
+
+  @include breakpoint(large){
+    max-width: 400px;
+  }
   
     &::-webkit-input-placeholder { 
-      color: #8e0d6e; 
+      color: #ffc0ef; 
     } 
+
 }
 
+label {
+  cursor: pointer;
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#add-toggle {
+  display: none;
+
+  &:checked ~ #showInput {
+    svg:hover {
+      transform: rotate(45deg);
+    }
+  }
+}
